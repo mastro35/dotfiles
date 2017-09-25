@@ -92,16 +92,16 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $wks1 "1: "
-set $wks2 "2: " 
-set $wks3 "3: "
-set $wks4 4
-set $wks5 5
-set $wks6 6
-set $wks7 7
-set $wks8 8
-set $wks9 9
-set $wks10 10
+set $wks1 "1: " 
+set $wks2 "2: "
+set $wks3 "3: "
+set $wks4 "4: "
+set $wks5 "5: "
+set $wks6 "6: "
+set $wks7 "7: "
+set $wks8 "8: "
+set $wks9 "9: "
+set $wks10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $wks1
@@ -118,7 +118,7 @@ bindsym $mod+0 workspace $wks10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $wks1
 bindsym $mod+Shift+2 move container to workspace $wks2
-bindsym $mod+Shift+3 move container to workspace $wks3
+bindsym imod+Shift+3 move container to workspace $wks3
 bindsym $mod+Shift+4 move container to workspace $wks4
 bindsym $mod+Shift+5 move container to workspace $wks5
 bindsym $mod+Shift+6 move container to workspace $wks6
@@ -132,7 +132,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -196,7 +196,9 @@ set $rofiCommandLine rofi -combi-modi window,drun -show combi -color-window \\"#
 
 bindsym $mod+d exec "$rofiCommandLine"
 
-assign [class="Firefox-esr"] $wks1
+assign [class="Firefox-esr"] $wks3
+assign [class="libreoffice-writer"] $wks8
+assign [class="libreoffice-calc"] $wks9
 
 
 bindsym $mod+shift+x exec i3lock
