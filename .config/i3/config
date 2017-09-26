@@ -201,7 +201,7 @@ assign [class="libreoffice-writer"] $wks8
 assign [class="libreoffice-calc"] $wks9
 assign [class="Code"] $wks2
 
-bindsym $mod+shift+x exec i3lock
+bindsym $mod+shift+x exec ~/.xlock/lock.sh
 exec_always feh --bg-scale ~/Immagini/wallpaper.jpg 
 
 exec --no-startup-id compton -f
