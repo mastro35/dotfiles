@@ -202,7 +202,7 @@ assign [class="libreoffice-calc"] $wks9
 assign [class="Code"] $wks2
 
 bindsym $mod+shift+x exec ~/.xlock/lock.sh
-exec_always feh --bg-scale ~/Immagini/wallpaper.jpg 
+exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg 
 
 exec --no-startup-id compton -f
 
