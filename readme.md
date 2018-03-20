@@ -1,6 +1,6 @@
 # mastro's dotfiles
 
-To use this settings you will need
+To use these settings with i3 (the best tiling window manager) you will need
 
 - i3
 - sucklesstools
@@ -9,6 +9,12 @@ To use this settings you will need
 - rofi
 - compton
 - feh
+
+To use my .vim configuration to configure vim (the best editor ever) you will need vundle, so as to be able to use vim plugins, so get vundle now with 
+
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ## Install this dotfiles onto a new system
 
@@ -61,3 +67,13 @@ config add .bashrc
 config commit -m "Add bashrc"
 config push
 ```
+
+## Install vim plugins
+
+Now that you have installed every dot file, start vim and execute
+
+```
+:PluginInstall
+```
+
+this will install all the plugin you need for vim.
