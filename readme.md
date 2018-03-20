@@ -3,12 +3,11 @@
 To use these settings with i3 (the best tiling window manager) you will need
 
 - i3
-- sucklesstools
 - scrot
-- imagemagick
 - rofi
 - compton
 - feh
+- ImageMagick 
 
 To use my .vim configuration to configure vim (the best editor ever) you will need vundle, so as to be able to use vim plugins, so get vundle now with 
 
