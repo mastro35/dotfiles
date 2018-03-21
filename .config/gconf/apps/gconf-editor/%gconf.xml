@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="recents" mtime="1521633934" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>/apps/gnome-terminal/profiles/Default/background_darkness</stringvalue>
+		</li>
+	</entry>
+</gconf>

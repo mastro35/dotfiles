@@ -31,7 +31,10 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'jistr/vim-nerdtree-tabs'
 
 " Nord - the best theme for VIM
-Plugin 'arcticicestudio/nord-vim'
+" Plugin 'arcticicestudio/nord-vim'
+
+" gruvbox theme
+Plugin 'morhetz/gruvbox' 
 
 " To auto indent Python files
 Plugin 'vim-scripts/indentpython.vim'
@@ -41,7 +44,7 @@ Plugin 'tmhedberg/SimpylFold'
 
 " To enable code completion
 if has("python3")
-    Bundle 'Valloric/YouCompleteMe'
+"	    Bundle 'Valloric/YouCompleteMe'
 endif
 
 " To enable syntax checking/Highlighting
@@ -67,11 +70,15 @@ filetype plugin indent on    " required
 let g:airline_powerline_fonts = 1	
 
 " Italicize the code comments
-let g:nord_italic_comments = 1
+" let g:nord_italic_comments = 1
 
 " enable the correct theme
-colorscheme nord
-let airline_theme = 'nord'
+" colorscheme nord
+" let airline_theme = 'nord'
+
+colorscheme gruvbox
+let airline_theme = 'gruvbox'
+set background=dark    " Setting dark mode
 
 " enable :NE to show the NERDTree
 :command NE NERDTree

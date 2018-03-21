@@ -21,15 +21,5 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 # Some people don't like fortune. If you uncomment the following lines,
 # you will have a fortune each time you log in ;-)
 
-#if [ -x /usr/bin/fortune ] ; then
-#    echo
-#    /usr/bin/fortune
-#    echo
-#fi
-
-alias ls="ls -Flash --color"
-alias vi=vim
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[1;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi) ‡ \A\[\033[0;37m\]]\342\224\200[\[\033[1;32m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
-
+export PATH=$PATH:/opt/pychar/bin
+export TERMINAL=gnome-terminal

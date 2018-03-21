@@ -5,9 +5,13 @@ To use these settings with i3 (the best tiling window manager) you will need
 - i3
 - scrot
 - rofi
-- compton
+- compton (optional)
 - feh
-- ImageMagick 
+- i3blocks
+- ImageMagick
+- gnome-terminal 
+- San Francisco Fonts (check https://github.com/AppleDesignResources/SanFranciscoFont) 
+- Font Awesome (check https://fontawesome.com/)
 
 To use my .vim configuration to configure vim (the best editor ever) you will need vundle, so as to be able to use vim plugins, so get vundle now with 
 

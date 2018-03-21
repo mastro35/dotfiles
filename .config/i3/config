@@ -8,8 +8,11 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# Mod1 = ALT - Mod4 = CMD
 
-set $mod Mod4
+set $mod Mod1
+set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -197,12 +200,14 @@ set $rofiCommandLine rofi -combi-modi window,drun -show combi -color-window \\"#
 bindsym $mod+d exec "$rofiCommandLine"
 
 assign [class="Firefox-esr"] $wks3
+assign [class="Firefox"] $wks3
 assign [class="libreoffice-writer"] $wks8
 assign [class="libreoffice-calc"] $wks9
 assign [class="Code"] $wks2
+assign [class="jetbrains-pycharm-ce"] $wks2
 
 bindsym $mod+shift+x exec ~/.xlock/lock.sh
-exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg 
+exec_always feh --bg-fill ~/.config/i3/wallpaper.png 
 
 exec --no-startup-id compton -f
 
